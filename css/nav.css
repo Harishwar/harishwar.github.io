@@ -5,7 +5,7 @@
     font-size: 22px;
     left: 20px;
     padding: 15px 0 0 22px;
-    z-index: 1000;
+    z-index: 101;
     float: left;
     width: 48px;
     height: 52px;
@@ -13,10 +13,6 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #1D7DD1;
-    -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, .3);
-    -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, .3);
-    -o-box-shadow: 1px 0px 2px rgba(0, 0, 0, .3);
-    box-shadow: 1px 0px 2px rgba(0, 0, 0, .3);
 }
 
 .nav-icon span {
@@ -115,11 +111,21 @@
 
 .nav {
     position: fixed;
-    height: 100%;
-    padding: 70px 20px 0 0;
-    left: -20px;
+    padding: 55px 30px 10px 0;
+    left: -10px;
     background: #fff;
     z-index: 100;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-bg {
+    position: fixed;
+    display: none;
+    background: #000;
+    opacity: 0.4;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
 }
 
 .nav ul li {
@@ -132,7 +138,7 @@
 .nav ul li a:link,
 .nav ul li a:visited,
 .nav ul li a:active {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -140,28 +146,28 @@
 .nav ul li a:active,
 .nav ul li a.active {
     padding-left: 10px;
-    border-left: thick solid #1D7DD1;
+    border-left: thick solid #fff;
 }
 
 .nav ul li a.active {
-    color: #1D7DD1;
+    color: #fff;
 }
 
 .nav-effect {
-    background: #fbfbfb;
+    background: #1D7DD1;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
     -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
     transition: transform 0.5s, visibility 0s 0.5s;
 }
 
 .nav-effect.open {
     visibility: visible;
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
 }

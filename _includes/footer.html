@@ -10,28 +10,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Custom Script -->
 <script>
+$(window).load(function() {
+    $('body').removeClass('preload');
+});
 /* Navbar */
 $('.nav-icon').on({
     mouseover: function() {
-        $(this).addClass("hover");
+        $(this).addClass('hover');
     },
     mouseleave: function() {
-        $(this).removeClass("hover");
+        $(this).removeClass('hover');
     },
     click: function() {
-        var clicks = $(this).data('clicks');
-        $("body").toggleClass("noscroll");
-        $(".nav-effect").toggleClass("open");
-        if (clicks) {
-            $(this).toggleClass("on");
-            $(this).mouseleave(function() {
-                $(this).toggleClass("hover");
-            });
-        } else {
-            $(this).toggleClass("on");
-            $(this).off('mouseleave');
-        }
-        $(this).data("clicks", !clicks);
+        $(this).toggleClass('on');
+        $(this).mouseleave(function() {
+            $(this).toggleClass('hover');
+        });
+        $('.nav-effect').toggleClass('open');
+        $('.nav-bg').toggle();
+    }
+});
+$('.nav-bg').on({
+    click: function(e) {
+        $('.nav-effect').removeClass('open');
+        $('.nav-icon').mouseleave(function() {
+            $(this).toggleClass('hover');
+        }).removeClass('on').removeClass('hover');
+        $(this).toggle();
     }
 });
 </script>
