@@ -5,6 +5,7 @@ body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* Background Image Source: http://prodigy.umbrella.al/business1/business2/ */
     background-image: url("../images/dottedWorld.png");
+    background-color: #fbfbfb;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

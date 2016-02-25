@@ -1,13 +1,11 @@
 # Site settings
 title: Harishwar
 email: hello@harishwar.com
-description: Hello
+description: ""
 baseurl: ""
 url: "/"
-twitter: _Harishwar
-github:  Harishwar
+github:  harishwar
 linkedin: harishwarterupalli
 
 # Build settings
 markdown: kramdown
-exclude: [scss]
