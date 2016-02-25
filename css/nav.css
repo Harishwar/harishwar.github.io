@@ -2,9 +2,9 @@
 
 .nav-icon {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     left: 20px;
-    padding: 13px 0 8px 21px;
+    padding: 15px 0 0 22px;
     z-index: 1000;
     float: left;
     width: 48px;
@@ -36,8 +36,8 @@
 
 .nav-icon span:before,
 .nav-icon span:after {
-    height: 30px;
-    width: 0.35em;
+    height: 26px;
+    width: 0.3em;
     border-radius: 2px;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -48,7 +48,7 @@
 
 .nav-icon span {
     margin-left: 0;
-    width: 30px;
+    width: 26px;
     height: 0.2em;
     margin-left: -0.5em;
     margin-top: 0.5em;
@@ -72,7 +72,7 @@
 .nav-icon.hover span,
 .nav-icon.hover span:before,
 .nav-icon.hover span:after {
-    width: 30px;
+    width: 26px;
     height: .2em;
 }
 

@@ -26,10 +26,20 @@ $('.nav-icon').on({
         $(this).removeClass("hover");
     },
     click: function() {
-        $(this).off('mouseleave');
-        $(this).toggleClass("on");
+        var clicks = $(this).data('clicks');
         $("body").toggleClass("noscroll");
         $(".nav-effect").toggleClass("open");
+        if (clicks) {
+            $(this).toggleClass("on");
+            $(this).mouseleave(function() {
+                $(this).toggleClass("hover");
+            });
+        } else {
+            $(this).toggleClass("on");
+            $(this).off('mouseleave');
+
+        }
+        $(this).data("clicks", !clicks);
     }
 });
 </script>
