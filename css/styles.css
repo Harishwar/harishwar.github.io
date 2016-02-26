@@ -157,6 +157,6 @@ footer .fa:hover:before,
 footer .fa:focus:before,
 footer .fa:active:before {
     color: #1D7DD1;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }

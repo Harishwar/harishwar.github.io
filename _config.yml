@@ -4,7 +4,7 @@ email: hello@harishwar.com
 description: ""
 baseurl: ""
 url: "/"
-github:  https://github.com/Harishwar/harishwar.github.io
+github:  https://github.com/harishwar/harishwar.github.io
 
 # Build settings
 markdown: kramdown

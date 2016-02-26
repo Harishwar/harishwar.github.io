@@ -3,39 +3,3 @@
         {% if site.github %} <a href="{{ site.github }}" target="_blank"><i class="fa fa-github icon-enlarge"></i></a> {% endif %}
     </div>
 </footer>
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<!-- Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- Custom Script -->
-<script>
-$(window).load(function() {
-    $('body').removeClass('preload');
-});
-/* Navbar */
-$('.nav-icon').on({
-    mouseover: function() {
-        $(this).addClass('hover');
-    },
-    mouseleave: function() {
-        $(this).removeClass('hover');
-    },
-    click: function() {
-        $(this).toggleClass('on');
-        $(this).mouseleave(function() {
-            $(this).toggleClass('hover');
-        });
-        $('.nav-effect').toggleClass('open');
-        $('.nav-bg').toggle();
-    }
-});
-$('.nav-bg').on({
-    click: function(e) {
-        $('.nav-effect').removeClass('open');
-        $('.nav-icon').mouseleave(function() {
-            $(this).toggleClass('hover');
-        }).removeClass('on').removeClass('hover');
-        $(this).toggle();
-    }
-});
-</script>

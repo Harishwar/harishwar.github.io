@@ -3,7 +3,7 @@
 .nav-icon {
     display: block;
     font-size: 22px;
-    left: 20px;
+    left: 12px;
     padding: 15px 0 0 22px;
     z-index: 101;
     float: left;
@@ -13,6 +13,10 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #1D7DD1;
+}
+
+.nav-icon.dark {
+    background-color: #26282B;
 }
 
 .nav-icon span {
@@ -63,8 +67,6 @@
     margin-left: 0.9em;
 }
 
-.nav-icon.hover {}
-
 .nav-icon.hover span,
 .nav-icon.hover span:before,
 .nav-icon.hover span:after {
@@ -111,63 +113,73 @@
 
 .nav {
     position: fixed;
-    padding: 55px 30px 10px 0;
-    left: -10px;
+    padding: 55px 0 0 0;
+    height: 100%;
     background: #fff;
     z-index: 100;
-    border-bottom-right-radius: 12px;
 }
 
 .nav-bg {
     position: fixed;
     display: none;
     background: #000;
-    opacity: 0.1;
+    opacity: 0.2;
     z-index: 99;
     height: 100%;
     width: 100%;
 }
 
-.nav ul li {
+.nav ul {
+    padding: 0;
+    margin: 0;
     font-size: 24px;
     list-style-type: none;
-    padding: 5px;
+}
+
+.nav ul li {
+    padding: 5px 20px 5px 20px;
+}
+
+.nav ul li.active {
+    color: #1D7DD1;
+    background-color: #1A1C1C;
+    border-left: solid #1D7DD1;
+}
+
+.nav ul li.active .fa {
+    font-size: 36px;
+    margin-left: -2px;
+}
+
+.nav ul li:hover {
+    color: #1D7DD1;
+    background-color: #1A1C1C;
 }
 
 .nav ul li a,
 .nav ul li a:link,
 .nav ul li a:visited,
-.nav ul li a:active {
+.nav ul li a:active,
+.nav ul li .fa {
     color: #fff;
     text-decoration: none;
 }
 
-.nav ul li a:hover,
-.nav ul li a:active,
-.nav ul li a.active {
-    padding-left: 10px;
-    border-left: thick solid #fff;
-}
-
-.nav ul li a.active {
-    color: #fff;
-}
-
 .nav-effect {
-    background: #1D7DD1;
+    background: #26282B;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translate(-100%, -100%);
-    transform: translate(-100%, -100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
     -webkit-transition: -webkit-transform 0.3s, visibility 0s 0.3s;
     transition: transform 0.3s, visibility 0s 0.3s;
 }
 
 .nav-effect.open {
     visibility: visible;
-    -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
 }
