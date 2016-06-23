@@ -12,7 +12,7 @@
     position: fixed;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    background-color: #1D7DD1;
+    background-color: #26282B;
 }
 
 .nav-icon.dark {
@@ -123,7 +123,7 @@
     position: fixed;
     display: none;
     background: #000;
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: 99;
     height: 100%;
     width: 100%;

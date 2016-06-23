@@ -47,22 +47,12 @@ $('.nav-bg').on({
 /* Unsplash */
 var Unsplash = new UnsplashPhoto();
 var images = [
-    'BYu8ITUWMfc',
-    'vwY2D2Wr4ME',
-    '8-o4p16GzSc',
-    'jwIk4Z3Msi4',
-    'iIg4F2IWbTM',
-    'IY-gY1FK-bo',
-    '63qfL0TciY8',
-    'ywnnwzcdR5o',
-    'DjlKxYFJlTc',
-    'FIKD9t5_5zQ',
-    'ahzw2Tg7IXs',
+    // 'BYu8ITUWMfc',
+    // 'vwY2D2Wr4ME',
     'KxWdfIgQTUE',
     'RJK6p5MJACQ',
-    'lQqVJkIx1g0',
-    'ULr8dMN6yDY'
+    'Evdzs-qe2E0'
 ];
 var index = Math.floor(Math.random() * images.length);
-var imageURL = Unsplash.find(images[index]).size(1366, 768).fetch();
+var imageURL = Unsplash.find(images[index]).fetch();
 $('body').css('background-image', 'url(' + imageURL + ')');
