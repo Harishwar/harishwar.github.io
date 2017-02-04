@@ -43,16 +43,3 @@ $('.nav-bg').on({
         $(this).toggle();
     }
 });
-
-/* Unsplash */
-var Unsplash = new UnsplashPhoto();
-var images = [
-    // 'BYu8ITUWMfc',
-    // 'vwY2D2Wr4ME',
-    'KxWdfIgQTUE',
-    'RJK6p5MJACQ',
-    'Evdzs-qe2E0'
-];
-var index = Math.floor(Math.random() * images.length);
-var imageURL = Unsplash.find(images[index]).fetch();
-$('body').css('background-image', 'url(' + imageURL + ')');
