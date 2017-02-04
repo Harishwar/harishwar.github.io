@@ -14,9 +14,9 @@ body {
 .background {
     background: #fbfbfb url("https://source.unsplash.com/aJTiW00qqtI");
     /* Evdzs-qe2E0 */
-    width: 110%;
-    height: 110%;
-    margin: -10px;
+    width: 120%;
+    height: 100%;
+    margin-left: -10%;
     position: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
