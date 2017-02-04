@@ -141,7 +141,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding-right: 10px;
-    position: absolute;
+    position: fixed;
 }
 
 footer p {
