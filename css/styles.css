@@ -1,14 +1,7 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: "Source Sans Pro", "Helvetica Neue";
-    background-color: #fbfbfb;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    position: fixed;
+    font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
+    background: #fbfbfb;
 }
 
 .preload * {
@@ -18,10 +11,24 @@ body {
     -o-transition: none !important;
 }
 
+.background {
+    background: #fbfbfb url("https://source.unsplash.com/aJTiW00qqtI");
+    /* Evdzs-qe2E0 */
+    width: 110%;
+    height: 110%;
+    margin: -10px;
+    position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+}
 
-/* Header */
-
+/* Content */
 .content {
+
     width: 100%;
     height: 100%;
     display: table;
@@ -32,7 +39,7 @@ body {
     height: auto;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.06);
 }
 
 .content .text-vertical-center {
@@ -48,9 +55,26 @@ body {
     font-weight: 700;
 }
 
+h1 {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
 
-/* Anchor Styles */
+h1:hover,
+h1:focus,
+h1:active {
+    color: #2d2d2d;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
 
+/* Anchor */
 a,
 a:link,
 a:visited,
@@ -60,9 +84,7 @@ a:active {
     color: inherit;
 }
 
-
-/* Custom Button Styles */
-
+/* Custom Button */
 .btn-dark {
     border-radius: 0;
     color: #fff;
@@ -74,6 +96,10 @@ a:active {
 .btn-dark:active {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-lg.btn-dark {
+    font-weight: 500;
 }
 
 .btn-light {
@@ -90,7 +116,7 @@ a:active {
 }
 
 .btn-blue {
-    border-radius: 3;
+    border-radius: 3px;
     color: #000;
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -103,15 +129,13 @@ a:active {
     -webkit-transition-duration: .3s;
     -moz-transition-duration: .3s;
     -o-transition-duration: .3s;
-    -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 1px 0px 0 rgba(0, 0, 0, .5);
-    -o-box-shadow: 1px 0px 2px rgba(0, 0, 0, .5);
-    box-shadow: 1px 0px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 1px 0 2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 1px 0 0 rgba(0, 0, 0, .5);
+    -o-box-shadow: 1px 0 2px rgba(0, 0, 0, .5);
+    box-shadow: 1px 0 2px rgba(0, 0, 0, .5);
 }
 
-
 /* Footer */
-
 footer {
     right: 0;
     bottom: 0;
@@ -128,13 +152,13 @@ footer a,
 footer a:link,
 footer a:visited,
 footer a:active {
-    color: #aaa;
+    color: #555;
     text-decoration: none;
 }
 
 footer .fa {
-    font-size: 22px;
-    padding: 0 24px 24px 0;
+    font-size: 30px;
+    padding: 0 40px 34px 0;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -161,7 +185,7 @@ footer .fa:before {
 footer .fa:hover:before,
 footer .fa:focus:before,
 footer .fa:active:before {
-    color: #ffffff;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    color: #3A3A3A;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }

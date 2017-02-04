@@ -1,5 +1,4 @@
 /* Navbar icon */
-
 .nav-icon {
     display: block;
     font-size: 22px;
@@ -37,7 +36,7 @@
 .nav-icon span:before,
 .nav-icon span:after {
     height: 26px;
-    width: 0.3em;
+    width: 0.24em;
     border-radius: 2px;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -47,7 +46,6 @@
 }
 
 .nav-icon span {
-    margin-left: 0;
     width: 26px;
     height: 0.2em;
     margin-left: -0.5em;
@@ -64,7 +62,7 @@
 
 .nav-icon span:after {
     background: #fff;
-    margin-left: 0.9em;
+    margin-left: 0.94em;
 }
 
 .nav-icon.hover span,
@@ -108,9 +106,7 @@
     transform: rotate(-45deg) translate(.45em, -.35em);
 }
 
-
 /* Navbar */
-
 .nav {
     position: fixed;
     padding: 55px 0 0 0;
